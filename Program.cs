@@ -8,6 +8,7 @@ namespace EducationalSystem
 {
     static class Program
     {
+        public static ApplicationContext Context { get; set; }
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +17,9 @@ namespace EducationalSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());
+
+            Context = new ApplicationContext(new adminForm());
+            Application.Run(Context);
         }
     }
 }

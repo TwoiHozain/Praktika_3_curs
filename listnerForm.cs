@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace EducationalSystem
 {
-    public partial class StartForm : Form
+    public partial class listnerForm : Form
     {
-        public StartForm()
+        public listnerForm()
         {
             InitializeComponent();
         }
 
-        private void StartForm_Load(object sender, EventArgs e)
+        private void listnerForm_Load(object sender, EventArgs e)
         {
 
         }
